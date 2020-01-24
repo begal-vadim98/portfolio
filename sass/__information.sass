@@ -1,0 +1,47 @@
+.information
+  padding: 65px
+  background: #fff
+  z-index: 9999
+  &__title
+    margin-bottom: 15px
+    color: #242426
+    font-family: "Didot LH"
+    font-size: 36px
+    font-style: italic
+    line-height: 45.42px
+  &__subtitle
+    color: #242426
+    font-family: "Didot LH"
+    font-size: 18px
+    font-style: italic
+    line-height: 45.42px
+  span
+    position: relative
+    display: inline-block
+    width: 280px
+    height: 2px
+    background-color: #f4b690
+    opacity: 0.8
+    &::after
+      content: ''
+      position: absolute
+      display: inline-block
+      top: 50%
+      margin-top: -5px
+      left: -17px
+      background-color: #f2ab80
+      width: 10px
+      height: 10px
+      transform: rotate(45deg)
+    &::before
+      content: ''
+      position: absolute
+      display: inline-block
+      width: 10px
+      height: 10px
+      right: -17px
+      top: 50%
+      margin-top: -5px
+      background-color: #f2ab80
+      border: 1px solid #f2ab7f
+      transform: rotate(45deg)

@@ -1,0 +1,1 @@
+﻿# begal-vadim.github.io

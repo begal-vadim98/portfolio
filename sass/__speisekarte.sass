@@ -1,0 +1,71 @@
+.speisekarte
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+  &-block
+    position: relative
+    margin-bottom: 50px
+    display: flex
+    flex: 0 0 45%
+    padding: 10px
+    transition: transform .1s ease-out
+    &::after
+      content: ''
+      position: absolute
+      border-top: 1px solid rgba(black, 0.4)
+      border-bottom: 1px solid rgba(black, 0.4)
+      top: -2px
+      right: -2px
+      left: -2px
+      bottom: -2px
+      transition: 1s
+      transform: scaleX(0)
+      transform-origin: left
+      opacity: 0
+    &::before
+      content: ''
+      position: absolute
+      border-right: 1px solid rgba(black, 0.4)
+      border-left: 1px solid rgba(black, 0.4)
+      top: -2px
+      right: -2px
+      left: -2px
+      bottom: -2px
+      transform: scaleY(0)
+      transform-origin: top
+      transition: 1s
+      opacity: 0
+    &:hover
+      &::after
+        transform: scaleX(1)
+        opacity: 1
+      &::before
+        transform: scaleY(1)
+        opacity: 1
+  &-text
+    background-color: rgba(#ffff, 1)
+    padding: 10px
+    z-index: 10
+    &__title
+      color: #282729
+      font-family: "Didot LH"
+      font-size: 24px
+      font-style: italic
+      line-height: 39.42px
+    &__subtitle
+      margin-bottom: 20px
+      color: #28272a
+      font-family: Raleway
+      font-size: 14px
+      font-weight: 500
+      line-height: 21.42px
+    &__link
+      color: #28272a
+      font-family: Raleway
+      font-size: 14px
+      font-weight: 400
+      line-height: 21.42px
+      text-decoration: underline
+  img

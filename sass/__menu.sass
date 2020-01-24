@@ -1,0 +1,192 @@
+.menu
+  background-color: #fff
+  padding-bottom: 40px
+  z-index: 999
+  &-wrap  
+    display: flex
+    flex-direction: column
+  &-block
+    position: relative
+    margin-bottom: 78px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    transition: 0.3s ease-out
+    &:hover
+      transform: scale(1.1)
+      cursor:  default
+      .menu-price__item
+        transform: translateY(0px)
+        transform: scale(1)
+        opacity: 1
+      .price__title
+        opacity: 0
+    &:nth-last-child(2)
+      flex-direction: row-reverse
+    &__mask
+      position: absolute
+      top: -1px
+      right: -70px
+  &-mask
+    position: relative
+  &-desrc
+    flex: 0 0 30%
+    z-index: 20
+    &__title
+      color: #28272a
+      font-family: 'GFS Didot', serif
+      font-weight: 400
+      font-size: 31px
+      font-style: italic
+      line-height: 50.38px
+    &__subtitle
+      color: #28272a
+      font-family: Raleway
+      font-size: 14px
+      font-weight: 500
+      line-height: 25px
+  &-price
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    position: relative
+    flex: 0 0 40%
+    overflow: hidden
+    &__item
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      color: #282729
+      font-family: 'GFS Didot', serif
+      font-size: 24px
+      font-style: italic
+      line-height: 11.77px
+      transition: 0.6s
+      transform: translateY(-100px)
+      opacity: 0
+.price__title
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  font-size: 14px
+  font-weight: 700
+  transition: 0.2s
+.menu-time__working
+  text-align: center
+  color: #28272a
+  font-family: "Didot LH"
+  font-size: 16px
+  font-style: italic
+  line-height: 26.38px
+.menu-actionen__title
+  position: relative
+  padding: 0
+  margin: 0
+  margin-top: 47px
+  margin-bottom: 45px
+  text-align: center
+  color: #f2ab7f
+  font-family: "Didot LH"
+  font-size: 36px
+  font-style: italic
+  line-height: 39.42px
+.menu-line
+  position: relative
+.menu-line__left
+  position: absolute
+  width: 128px
+  height: 1px
+  background-color: #f3b189
+  transform: translateY(-50%)
+  top: 50%
+  left: 25%
+  &::after
+    content: ''
+    position: absolute
+    display: inline-block
+    left: -16px
+    background-color: #f2ab80
+    width: 8px
+    height: 8px
+    transform: rotate(45deg)
+    top: -4px
+  &::before
+    content: ''
+    position: absolute
+    display: inline-block
+    left: -19px
+    background-color: transparent
+    border: 1px solid #f2ab7f
+    width: 14px
+    height: 14px
+    transform: rotate(45deg)
+    top: -7px
+    animation: rotate 2s infinite
+.menu-line__right
+  position: absolute
+  width: 128px
+  height: 1px
+  background-color: #f3b189
+  transform: translateY(-50%)
+  right: 25%
+  transform: translateY(-50%)
+  top: 50%
+  &::after
+    content: ''
+    position: absolute
+    display: inline-block
+    right: -18px
+    background-color: #f2ab80
+    width: 8px
+    height: 8px
+    transform: rotate(45deg)
+    top: -4px
+  &::before
+    content: ''
+    position: absolute
+    display: inline-block
+    right: -21px
+    background-color: transparent
+    border: 1px solid #f2ab7f
+    width: 14px
+    height: 14px
+    transform: rotate(45deg)
+    top: -7px
+.menu
+  &-slider
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &-block
+      position: relative
+      border: 1px solid #f2ab7f
+      padding: 10px
+      transition: 0.3s ease-out
+      &:hover
+        transform: scale(0.95)
+        .overlay
+          opacity: 1
+      img
+        min-height: 355px
+        width: 100%
+.overlay
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: 100%
+  background-color: rgba(#f2ab7f, 0.3)
+  top: 0
+  left: 0
+  z-index: 9
+  opacity: 0
+  transition: 1s
+  &__link
+    background-color: rgba(#fff, 0.6)
+    padding: 10px 35px
+    color: black
+    font-weight: 700
+    text-transform: uppercase
+    text-shadow: 1px 0px 2px #fff
